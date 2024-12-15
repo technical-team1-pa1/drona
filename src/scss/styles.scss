@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles with default layout.
+@import "@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
+
+// Custom styles for this theme
+@import "theme";
+
+// Some temp fixes
+//@import "fixes";
+
+// If you want to add custom CSS you can put it here.
+@import "custom";
+
+// Examples
+// We use those styles to show code examples, you should remove them in your application.
+@import "examples";
+
+.sidebar-nav .nav-link.active {
+    background-color: rgb(222 227 230);
+    color: var(--cui-sidebar-nav-link-active-color);
+    /* background: var(--cui-sidebar-nav-link-active-bg); */
+}
+body {
+    background-color: #9fb1bf !important;
+}
+thead {
+    background-color: rgb(43 100 119);
+    color: white;
+}
+tbody, td, tfoot, th, thead, tr {
+    border: 1px solid #bfb4b4 !important;
+    padding: 7px 7px 7px 7px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.sidebar-nav .nav-link:hover {
+    background: #14586a !important;
+}
+.btn-primary {
+    background-color: #356a7d !important;}
